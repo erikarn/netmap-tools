@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Here's a simple example to run this on four netmap rings.
+
+./bridge -C 0 \
+    -i netmap:ncxl4-0,netmap:ncxl0 \
+    -i netmap:ncxl4-1,netmap:ncxl1 \
+    -i netmap:ncxl4-2,netmap:ncxl2 \
+    -i netmap:ncxl4-3,netmap:ncxl3
